@@ -57,12 +57,12 @@ cv2.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72538198/104900446-1497d180-59a2-11eb-8004-7554fc6b1ed6.png)
 
 ## 3.Develop a program to find sum and mean of multiple images.
-## Grayscaling 
- it is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.
-## A binary image 
- it is a monochromatic image that consists of pixels that can have one of exactly two colors, usually black and white.
-## cv2.threshold
- it works as, if pixel value is greater than a threshold value, it is assigned one value (may be white), else it is assigned another value (may be black).
+You can add two images with the OpenCV function, cv. add(), or simply by the numpy operation res = img1 + img2. The function mean calculates the mean value M of array elements, independently for each channel, and return it:" This mean it should return you a scalar for each layer of you image
+## The append()
+method in python adds a single item to the existing list.
+## listdir() 
+method in python is used to get the list of all files and directories in the specified directory.
+
 ## program:
 import cv2 
 import os
@@ -84,13 +84,33 @@ cv2.waitKey(0)
 ## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72538198/104902314-9ab51780-59a4-11eb-860d-c8c67f996809.png)
 ## 4.Convert images grayscale and binary image.
-## Color spaces are a way to represent the color channels present in the image that gives the image that particular hue
+## Grayscaling 
+ it is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.
+## A binary image 
+ it is a monochromatic image that consists of pixels that can have one of exactly two colors, usually black and white.
+## cv2.threshold
+ it works as, if pixel value is greater than a threshold value, it is assigned one value (may be white), else it is assigned another value (may be black).
+## program:
+import numpy as np
+import cv2
+img = cv2.imread('goal.jpg',0)
+cv2.imshow('Original',img)
+cv2.imwrite('graygoal.jpg',img)
+img = cv2.imread('goal.jpg', 2) 
+ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY) 
+cv2.imshow("Binary", bw_img) 
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+## OUTPUT:
+![image](https://user-images.githubusercontent.com/72538198/104902512-d6e87800-59a4-11eb-98fd-530ed20b6156.png)
+## 5.Develop program to given colour images to different colour space.
+Color spaces are a way to represent the color channels present in the image that gives the image that particular hue
 ## BGR color space: 
 OpenCV’s default color space is RGB.
 ## HSV color space:
 It stores color information in a cylindrical representation of RGB color points. It attempts to depict the colors as perceived by the human eye. Hue value varies from 0-179, Saturation value varies from 0-255 and Value value varies from 0-255.
 ## LAB color space :
-L – Represents Lightness.A – Color component ranging from Green to Magenta.B – Color component ranging from Blue to Yellow. The HSL color space, also called HLS or HSI, stands for:Hue : the color type Ranges from 0 to 360° in most applications
+L – Represents Lightness.A – Color component ranging from Green to Magenta.B – Color component ranging from Blue to Yellow. The HSL color space, also called HLS or HSI, stands ## for:Hue : the color type Ranges from 0 to 360° in most applications
 ## Saturation :
 variation of the color depending on the lightness.
 ## Lightness :
@@ -99,28 +119,10 @@ variation of the color depending on the lightness.
 Y refers to the luminance or intensity, and U/V channels represent color information. This works well in many applications because the human visual system perceives intensity information very differently from color information.
 ## cv2.cvtColor()
 method is used to convert an image from one color space to another.
-## program:
-import numpy as np
-import cv2
-img = cv2.imread('nature.jpg',0)
-cv2.imshow('Original',img)
-cv2.imwrite('graynature.jpg',img)
-img = cv2.imread('nature.jpg', 2) 
-ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY) 
-cv2.imshow("Binary", bw_img) 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-## OUTPUT:
-![image](https://user-images.githubusercontent.com/72538198/104902512-d6e87800-59a4-11eb-98fd-530ed20b6156.png)
-## 5.Develop program to given colour images to different colour space.
-2D array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. However, 2D arrays are created to implement a relational database look alike data structure.
-## numpy.zeros() 
-function returns a new array of given shape and type, with zeros.
-## Image.fromarray(array)
-itis creating image object of above array
+
 ## program:
 import cv2
-img=cv2.imread('nature.jpg')
+img=cv2.imread('goal.jpg')
 yuv_img = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
 cv2.imshow('yuv image', yuv_img)
 cv2.waitKey()
@@ -138,11 +140,12 @@ cv2.waitKey()
 ## OUTPUT: 
 
 ## 6.Develop a program to create an images from 2D array.Generate array of random size.
-You can add two images with the OpenCV function, cv. add(), or simply by the numpy operation res = img1 + img2. The function mean calculates the mean value M of array elements, independently for each channel, and return it:" This mean it should return you a scalar for each layer of you image
-## The append() 
-method in python adds a single item to the existing list.
-## listdir()
-method in python is used to get the list of all files and directories in the specified directory.
+## 2D array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. However, 2D arrays are created to implement a relational database look alike data structure.
+## numpy.zeros()
+function returns a new array of given shape and type, with zeros.
+## Image.fromarray(array)
+is creating image object of above array
+
 ## program:
 import numpy as np
 from PIL import Image
