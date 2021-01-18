@@ -82,7 +82,7 @@ mean=im/len(files)
 cv2.imshow("mean",mean)
 cv2.waitKey(0)
 ## OUTPUT:
-
+![image](https://user-images.githubusercontent.com/72538198/104902314-9ab51780-59a4-11eb-860d-c8c67f996809.png)
 ## 4.Convert images grayscale and binary image.
 ## Color spaces are a way to represent the color channels present in the image that gives the image that particular hue
 ## BGR color space: 
