@@ -5,6 +5,15 @@
 ## Dimension reduction:
  For e.g. In RGB images there are three color channels and has three dimensions while grayscaled images are single dimensional. Reduces model complexity: Consider training neural  article on RGB images of 10x10x3 pixel.The input layer will have 300 input nodes. On the other hand, the same neural network will need only 100 input node for grayscaled images. 
 ## program:
+## imshow()
+This function in pyplot madules of matplotlib lib is used display as an image.
+## imwrite()
+This method is used to save an image to any storage devices.
+## waitKey()
+It is a keyboard binding function, the function waits for specified miliseconds for any keyboard event .If you press any key in that time,the program continues.
+## destroyAllWindows
+simply destroys all the windows we created.
+
 import numpy as np
 import cv2
 img = cv2.imread('goaL.jpg',0)
