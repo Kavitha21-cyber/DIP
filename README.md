@@ -13,3 +13,4 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 cv2.imwrite('graygoal.jpg',img)
 output
+![image](https://user-images.githubusercontent.com/72538198/104898756-05b01f80-59a0-11eb-9da6-66e57376a634.png)
