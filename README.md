@@ -138,7 +138,7 @@ cv2.imshow('s channel',hsv_img[:,:,1])
 cv2.imshow('v channel',hsv_img[:,:,2])
 cv2.waitKey()
 ## OUTPUT: 
-
+![image](https://user-images.githubusercontent.com/72538198/104905069-e2896e00-59a7-11eb-98c0-c4cc6b715d40.png)
 ## 6.Develop a program to create an images from 2D array.Generate array of random size.
 ## 2D array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. However, 2D arrays are created to implement a relational database look alike data structure.
 ## numpy.zeros()
