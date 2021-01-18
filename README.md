@@ -181,5 +181,5 @@ print("Original matrix:\n",M)
 print("Summed neighbors matrix:\n",N)
 
 ## OUTPUT:
-
+![image](https://user-images.githubusercontent.com/72538198/104907323-ed91cd80-59aa-11eb-9f8c-24b67c2c0dbc.png)
 
