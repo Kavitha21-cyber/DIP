@@ -43,3 +43,16 @@ cv2.imwrite('scaling.jpg',result)
 cv2.waitKey(0)
 Output:
 ![image](https://user-images.githubusercontent.com/72538198/104899706-304ea800-59a1-11eb-83cb-0d56cce9298f.png)
+## ROTATION
+Image rotation is a common image processing routine used to rotate images at any desired angle. This helps in image reversal, flipping, and obtaining an intended view of the image. Image rotation has applications in matching, alignment, and other image-based algorithms. OpenCV is a well-known library used for image processing.
+## PROGRAM
+import cv2
+import numpy as np
+src=cv2.imread('nature.jpg')
+img=cv2.imshow('nature.jpg',src)
+windowsname='image'
+image=cv2.rotate(src,cv2.ROTATE_90_CLOCKWISE)
+cv2.imshow(windowsname,image)
+cv2.waitKey(0)
+## OUTPUT
+
