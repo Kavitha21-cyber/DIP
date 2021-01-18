@@ -154,3 +154,4 @@ mat = np.reshape(array,(200,220))
 img = Image.fromarray( mat , 'RGB')
 img.show()
 ## OUTPUT:
+![image](https://user-images.githubusercontent.com/72538198/104905276-22e8ec00-59a8-11eb-81a5-7c1ba8fa5abd.png)
