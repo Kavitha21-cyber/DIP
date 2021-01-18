@@ -155,3 +155,19 @@ img = Image.fromarray( mat , 'RGB')
 img.show()
 ## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72538198/104905276-22e8ec00-59a8-11eb-81a5-7c1ba8fa5abd.png)
+
+## 7.Find neighbors of matrix:
+## PROGRAM:
+import numpy as np
+i=0
+j=0
+a= np.array([[1,2,3,4,5], [2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8],[5,6,7,8,9]])
+print("a : ",str(a))
+def neighbors(radius, rowNumber, columnNumber):
+     return [[a[i][j] if  i >= 0 and i < len(a) and j >= 0 and j < len(a[0]) else 0
+                for j in range(columnNumber-1-radius, columnNumber+radius)]
+                    for i in range(rowNumber-1-radius, rowNumber+radius)]
+neighbors(1, 2, 3)
+## OUTPUT:
+
+
