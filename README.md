@@ -111,7 +111,7 @@ cv2.imshow("Binary", bw_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ## OUTPUT:
-
+![image](https://user-images.githubusercontent.com/72538198/104902512-d6e87800-59a4-11eb-98fd-530ed20b6156.png)
 ## 5.Develop program to given colour images to different colour space.
 2D array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. However, 2D arrays are created to implement a relational database look alike data structure.
 ## numpy.zeros() 
