@@ -42,3 +42,4 @@ result=cv2.resize(src,dsize)
 cv2.imwrite('scaling.jpg',result)
 cv2.waitKey(0)
 Output:
+![image](https://user-images.githubusercontent.com/72538198/104899706-304ea800-59a1-11eb-83cb-0d56cce9298f.png)
