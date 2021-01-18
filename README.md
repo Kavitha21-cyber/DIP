@@ -23,3 +23,22 @@ cv2.destroyAllWindows()
 cv2.imwrite('graygoal.jpg',img)
 output
 ![image](https://user-images.githubusercontent.com/72538198/104898756-05b01f80-59a0-11eb-9da6-66e57376a634.png)
+## 2.Develop a program to perform linear transformation on image.
+## Scalar transformation:
+Image resizing refers to the scaling of images. Scaling comes handy in many image processing as well as machine learning applications. It helps in reducing the number of pixels from an image .
+## cv2.resize()
+method refers to the scaling of images. Scaling comes handy in many image processing as well as machine learning applications. It helps in reducing the number of pixels from an image
+## imshow()
+function in pyplot module of matplotlib library is used to display data as an image
+import cv2
+import numpy as np
+src=cv2.imread('goal.jpg',1)
+img=cv2.imshow('goal.jpg',src)
+scale_p=500
+width=int(src.shape[1]*scale_p/100)
+height=int(src.shape[0]*scale_p/100)
+dsize=(width,height)
+result=cv2.resize(src,dsize)
+cv2.imwrite('scaling.jpg',result)
+cv2.waitKey(0)
+Output:
