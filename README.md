@@ -48,11 +48,12 @@ Image rotation is a common image processing routine used to rotate images at any
 ## PROGRAM
 import cv2
 import numpy as np
-src=cv2.imread('nature.jpg')
-img=cv2.imshow('nature.jpg',src)
+src=cv2.imread('goal.jpg')
+img=cv2.imshow('goal.jpg',src)
 windowsname='image'
 image=cv2.rotate(src,cv2.ROTATE_90_CLOCKWISE)
 cv2.imshow(windowsname,image)
 cv2.waitKey(0)
 ## OUTPUT
+![image](https://user-images.githubusercontent.com/72538198/104900446-1497d180-59a2-11eb-8004-7554fc6b1ed6.png)
 
