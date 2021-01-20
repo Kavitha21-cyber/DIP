@@ -313,3 +313,6 @@ int main()
  p * q;
 return 0;
 }
+## output
+![image](https://user-images.githubusercontent.com/72538198/105166605-49319780-5b20-11eb-8069-f7443f35b0be.png)
+
