@@ -181,6 +181,8 @@ print("Original matrix:\n",M)
 print("Summed neighbors matrix:\n",N)
 
 ![image](https://user-images.githubusercontent.com/72538198/104907323-ed91cd80-59aa-11eb-9f8c-24b67c2c0dbc.png)
+## program 8
+finding the neighbours of the matrix:
 import numpy as np
 i=0
 j=0
@@ -193,5 +195,8 @@ def neighbors(radius, rowNumber, columnNumber):
 neighbors(1, 2, 3)
 ## output
 ![image](https://user-images.githubusercontent.com/72538198/105152354-bab51a00-5b0f-11eb-9a9e-6657b8bfd883.png)
+
+## for neighbours (3,2,3)
+## output
 
 
