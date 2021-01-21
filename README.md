@@ -359,3 +359,14 @@ if cv2.waitKey(0) & 0xff == 27:
     cv2.destroyAllWindows()
 ## output:
 ![image](https://user-images.githubusercontent.com/72538198/105335109-51510c00-5be0-11eb-9f0a-b29bbac837dd.png)
+## program 12:
+## program to perform gamma transformation
+import cv2
+import numpy as np
+img=cv2.imread("goal.jpg")
+gamma_two_point_two=np.array(255*(img/255)**2.2,dtype='uint8')
+gamma_point_four=np.array(255*(img/255)**0.24,dtype='uint8')
+img3=cv2.hconcat([gamma_two_point_two,gamma_point_four])
+cv2.imshow('goal',img3)
+cv2.waitKey(0)
+## output:
