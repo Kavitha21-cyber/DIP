@@ -316,4 +316,24 @@ return 0;
 }
 ## output
 ![image](https://user-images.githubusercontent.com/72538198/105166605-49319780-5b20-11eb-8069-f7443f35b0be.png)
-
+## program 10
+## write a program to find the negation of the images
+from pylab import*
+from skimage import img_as_float
+skI = imread("goal.jpg");    
+subplot(1, 2, 1),
+ 
+#displaying the RGB image
+imshow(skI);
+title("Original image");
+ 
+#levels of the 8-bit image
+L = 2 ^ 8;    
+ 
+# finding the negative                    
+neg = (L - 1) - skI;
+subplot(1, 2, 2),
+ 
+#displaying the negative image
+imshow(neg);
+title("Negative Image") 
