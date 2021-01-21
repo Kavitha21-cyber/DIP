@@ -337,3 +337,5 @@ subplot(1, 2, 2),
 #displaying the negative image
 imshow(neg);
 title("Negative Image") 
+## output:
+![image](https://user-images.githubusercontent.com/72538198/105332517-624c4e00-5bdd-11eb-9ab6-a87450c7432d.png)
